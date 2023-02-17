@@ -16,13 +16,13 @@ public class ArraysAreEqual {
      */
     public boolean equal(int[] a, int[] b){
         if(a.length != b.length){
-            return false;
+            return false;//corner case check
         }
         for(int i = 0; i < a.length; i++){
             if(a[i] != b[i]){
-                return false;
+                return false;//if we find a mismatch, the arrays are not equal
             }
         }
-        return true;
+        return true;//if we loop through the array whthout finding a mismatch,the arrays are equal
     }
 }
